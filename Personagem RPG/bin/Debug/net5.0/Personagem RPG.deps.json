@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Personagem RPG/1.0.0": {
+        "runtime": {
+          "Personagem RPG.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Personagem RPG/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

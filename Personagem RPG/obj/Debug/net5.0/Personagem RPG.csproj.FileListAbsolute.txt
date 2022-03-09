@@ -1,0 +1,16 @@
+D:\Projetos\PersonagemRpg\PersonagemRPG\Personagem RPG\bin\Debug\net5.0\Personagem RPG.exe
+D:\Projetos\PersonagemRpg\PersonagemRPG\Personagem RPG\bin\Debug\net5.0\Personagem RPG.deps.json
+D:\Projetos\PersonagemRpg\PersonagemRPG\Personagem RPG\bin\Debug\net5.0\Personagem RPG.runtimeconfig.json
+D:\Projetos\PersonagemRpg\PersonagemRPG\Personagem RPG\bin\Debug\net5.0\Personagem RPG.runtimeconfig.dev.json
+D:\Projetos\PersonagemRpg\PersonagemRPG\Personagem RPG\bin\Debug\net5.0\Personagem RPG.dll
+D:\Projetos\PersonagemRpg\PersonagemRPG\Personagem RPG\bin\Debug\net5.0\ref\Personagem RPG.dll
+D:\Projetos\PersonagemRpg\PersonagemRPG\Personagem RPG\bin\Debug\net5.0\Personagem RPG.pdb
+D:\Projetos\PersonagemRpg\PersonagemRPG\Personagem RPG\obj\Debug\net5.0\Personagem RPG.csproj.AssemblyReference.cache
+D:\Projetos\PersonagemRpg\PersonagemRPG\Personagem RPG\obj\Debug\net5.0\Personagem RPG.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\PersonagemRpg\PersonagemRPG\Personagem RPG\obj\Debug\net5.0\Personagem RPG.AssemblyInfoInputs.cache
+D:\Projetos\PersonagemRpg\PersonagemRPG\Personagem RPG\obj\Debug\net5.0\Personagem RPG.AssemblyInfo.cs
+D:\Projetos\PersonagemRpg\PersonagemRPG\Personagem RPG\obj\Debug\net5.0\Personagem RPG.csproj.CoreCompileInputs.cache
+D:\Projetos\PersonagemRpg\PersonagemRPG\Personagem RPG\obj\Debug\net5.0\Personagem RPG.dll
+D:\Projetos\PersonagemRpg\PersonagemRPG\Personagem RPG\obj\Debug\net5.0\ref\Personagem RPG.dll
+D:\Projetos\PersonagemRpg\PersonagemRPG\Personagem RPG\obj\Debug\net5.0\Personagem RPG.pdb
+D:\Projetos\PersonagemRpg\PersonagemRPG\Personagem RPG\obj\Debug\net5.0\Personagem RPG.genruntimeconfig.cache
