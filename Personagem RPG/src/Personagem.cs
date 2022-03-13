@@ -11,7 +11,9 @@ namespace Personagem_RPG.src
 
                                                  /*Regras de Jogo
 
-            O level do personagem será de 1 ao maximo de 50.
+            O level do personagem será a partir de 1 até o maximo de 50.
+            Cada personagem terá atributos iniciais de acordo com a Classe selecionada.
+            O limite de Pontos de Atributos que o jogador poderá alcançar distribuindo pontos, será de 70 pontos. 
             A cada Level do personagem será permitido distribuir 1 ponto de atributo a escolha do Jogador.
 
             - Pontos de Vitaliade dará ao personagem pontos de HP e um aumento na taxa de defesa.
@@ -47,28 +49,35 @@ namespace Personagem_RPG.src
             Vitality, Strength, Intelligence, Dexterity
         }
 
-        protected void AddDexterityPoints(int points)
+        protected void AddAttributePoints(Personagem.Attribute attribute, int amountOfPoints)
         {
-            DexterityAttribute += points;
-            RecalculateProperties();
-        }
-
-        protected void AddIntelligencePoints(int points)
-        {
-            IntelligenceAttribute += points;
-            RecalculateProperties();
-        }
-
-        protected void AddStrengthPoints(int points)
-        {
-            StrengthAttribute += points;
-            RecalculateProperties();
-        }
-
-        protected void AddVitalityPoints(int points)
-        {
-            VitalityAttribute += points;
-            RecalculateProperties();
+            if ((amountOfPoints <= AttributePointsToDistribute) &&
+                (amountOfPoints > 0))
+            {
+                switch (attribute)
+                {
+                    case Personagem.Attribute.Dexterity:
+                        DexterityAttribute += amountOfPoints;
+                        RecalculateProperties();
+                        break;
+                    case Personagem.Attribute.Intelligence:
+                        IntelligenceAttribute += amountOfPoints;
+                        RecalculateProperties();
+                        break;
+                    case Personagem.Attribute.Strength:
+                        StrengthAttribute += amountOfPoints;
+                        RecalculateProperties();
+                        break;
+                    case Personagem.Attribute.Vitality:
+                        VitalityAttribute += amountOfPoints;
+                        RecalculateProperties();
+                        break;
+                }
+            }
+            else
+            {
+                throw new ArgumentOutOfRangeException();
+            }
         }
 
         private void IncreasesExperience(int experienceToIncrease)
@@ -100,33 +109,6 @@ namespace Personagem_RPG.src
                 ExperiencePointForNextLevel = Convert.ToInt32(experience);
             }
         }
-
-        private void DistributeAttributePoints (Attribute attribute, int amountOfPoints)
-        {
-            if ((amountOfPoints <= AttributePointsToDistribute) &&
-                (amountOfPoints > 0))
-            {
-                switch (attribute)
-                {
-                    case Attribute.Dexterity:
-                        AddDexterityPoints(amountOfPoints);
-                        break;
-                    case Attribute.Intelligence:
-                        AddIntelligencePoints(amountOfPoints);
-                        break;
-                    case Attribute.Strength:
-                        AddStrengthPoints(amountOfPoints);
-                        break;
-                    case Attribute.Vitality:
-                        AddVitalityPoints(amountOfPoints);
-                        break;
-                }
-            }
-            else
-            {
-                throw new ArgumentOutOfRangeException();
-            }            
-        }        
 
         private void CalculateHpMaxPoints()
         {
